@@ -53,8 +53,7 @@ def main():
     loss = pressure_loss_from_fittings(velocity, quantity_angles)
     pressure += loss
 
-    loss = pressure_loss_from_pipe_reduction(diameter,
-            velocity, reynolds, HDPE_SDR11_INNER_DIAMETER)
+    loss = pressure_loss_from_pipe_reduction(diameter,velocity, reynolds, HDPE_SDR11_INNER_DIAMETER)
     pressure += loss
 
     diameter = HDPE_SDR11_INNER_DIAMETER
